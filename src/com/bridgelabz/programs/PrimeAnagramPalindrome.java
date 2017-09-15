@@ -1,4 +1,4 @@
-package com.bridgelabz.algorithmPrograms;
+package com.bridgelabz.programs;
 
 import java.util.ArrayList;
 import java.util.List;
