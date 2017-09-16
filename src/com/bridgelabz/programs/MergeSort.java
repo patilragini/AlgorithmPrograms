@@ -13,7 +13,6 @@ import com.bridgelabz.utility.Utility;
 public class MergeSort {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		// String str2[]={"tag","aaa","bat","mat","cat","mat","fat"};
 		Scanner scanner = new Scanner(System.in);
 		try {
