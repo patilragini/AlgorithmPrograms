@@ -2,7 +2,7 @@
  *  @author  Ragini Patil
  *  @version 1.0
  *  @since   9-09-2017
- *
+ *@purpose: print prime number in given range
  ******************************************************************************/
 package com.bridgelabz.programs;
 

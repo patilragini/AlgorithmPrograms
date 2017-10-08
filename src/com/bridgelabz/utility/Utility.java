@@ -13,32 +13,30 @@ public class Utility {
 
 	/**
 	 * 
-	 * @param str1
-	 *            E
+	 * @param string1 E
 	 * @return String
 	 *         <p>
-	 *         removes all spaces passed in args and returns string withno space
+	 *        Generic method that removes all spaces passed in args and returns string with no space
 	 * 
 	 */
-	private static <E> String noSpace(E str1) {
-		String nospace = ((String) str1).replaceAll("\\s", "");
+	private static <E> String noSpace(E string1) {
+		String nospace = ((String) string1).replaceAll("\\s", "");
 		return nospace;
 	}
 
 	/**
-	 * @param str1
-	 *            E
-	 * @param str2
-	 *            E
+	 * @param string1  E
+	 * @param string2  E
 	 * @return boolean
 	 *         <p>
 	 *         true ->is anagram
 	 *         <p>
 	 *         false ->not anagram
+	 *			<p>Generic method that checks two strings and returns boolean value
 	 */
-	public static <E> Boolean anagramChecker(E str1, E str2) {
-		String string1 = noSpace(str1);
-		String string2 = noSpace(str2);
+	public static <E> Boolean anagramChecker(E word1, E word2) {
+		String string1 = noSpace(word1);
+		String string2 = noSpace(word2);
 		boolean status = true;
 		if (string1.length() != string2.length()) {
 			status = false;
@@ -63,9 +61,9 @@ public class Utility {
 	// function to check prime no
 	/**
 	 * @author ragini
-	 * @param int
-	 *            number
-	 * @return int number
+	 * @param int  number
+	 * @return boolean
+	 *		<p>function to check prime number
 	 **/
 	public static boolean checkPrime(int number) {
 		// condition to check if no less than two
@@ -109,12 +107,13 @@ public class Utility {
 		}
 	}
 
-	/********
+	/***
 	 * 
 	 * @param array
 	 *            , element
 	 * @param
 	 * @return isPresent boolean
+	 *		<p> binarySearchGeneric accepts array and word and search in array
 	 */
 	public static <T extends Comparable<T>> boolean binarySearchGeneric(T array[], T word) {
 
@@ -141,8 +140,7 @@ public class Utility {
 	/**
 	 * @param unsorted
 	 *            T[]
-	 *            <p>
-	 * 			Do bubble sort generic
+	 *            <p>do bubble sort generic
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static <T> void doBubbleSortGeneric(T[] unsorted) {
@@ -346,7 +344,7 @@ public class Utility {
 	 *            int
 	 * @param position
 	 *            int
-	 * 
+	 * <p> calls recursivelly to calculate notes required for change
 	 */
 	public static void giveChange(int noteCounts[], int change, int position) {
 		int notes[] = { 1000, 500, 100, 50, 10, 2, 1 };
@@ -422,24 +420,24 @@ public class Utility {
 																	// paied
 	}
 
-	static double epsilon = 1e-15, t;
+	static double epsilon = 1e-15, ans;
 /**
  *  @param number int
- *  
+ *  <p> prints square root of number
  */
 	public static void sqrt(int number) {
 		epsilon = 1e-15; // relative error tolerance
-		t = number; // estimate of the square root of c
+		ans = number; // estimate of the square root of c
 		// repeatedly apply Newton update step until desired precision is
 		// achieved
 		if (number >= 0) {
-			while (Math.abs(t - number / t) > epsilon * t) {
-				t = (number / t + t) / 2.0;
+			while (Math.abs(ans - number / ans) > epsilon * ans) {
+				ans = (number / ans + ans) / 2.0;
 			}
 		} else
 			System.out.println("invalid number");
 		// print out the estimate of the square root of c
-		System.out.println(t);
+		System.out.println(ans);
 	}
 
 	/**
@@ -527,7 +525,7 @@ public class Utility {
 	 * 
 	 * @param arrayList
 	 *            array
-	 * 
+	 * <p> divides array and print by swaping both parts 
 	 */
 
 	public static void swapNibbles(ArrayList<?> array) {
@@ -559,6 +557,7 @@ public class Utility {
 	 * @param mid
 	 * @return total (eg 01000110 which is 70 in decimal.) return 70
 	 * @author ragini
+	 * 
 	 */
 	public static ArrayList<Integer> getNibble(ArrayList<?> array, int a, int b) {
 
@@ -605,7 +604,8 @@ public class Utility {
 	/**
 	 * 
 	 * @param startTime
-	 * @return elapsed time i.e stopTime - startTime
+	 * @return elapsed time long
+	 *<p>returns stopTime - startTime
 	 */
 	public static long elapsedTime(long startTime) {
 		stopTime = System.currentTimeMillis();
@@ -615,9 +615,9 @@ public class Utility {
 	/**
 	 * 
 	 * @param int
-	 *            str1
+	 *            string1
 	 * @param int
-	 *            str2
+	 *            string2
 	 * @return true ->anagram
 	 *         <p>
 	 *         false->not anagram

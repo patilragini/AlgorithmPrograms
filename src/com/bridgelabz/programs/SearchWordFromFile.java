@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   8-09-2017
+ *@purpose : search word from file  
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.io.IOException;

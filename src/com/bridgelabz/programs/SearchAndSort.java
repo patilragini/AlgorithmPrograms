@@ -3,7 +3,7 @@
  *  @author  Ragini Patil
  *  @version 1.0
  *  @since   1-09-2017
- *
+ *@purpose: perform bubbleSort,insertionSort,binarySearch
  ******************************************************************************/
 package com.bridgelabz.programs;
 

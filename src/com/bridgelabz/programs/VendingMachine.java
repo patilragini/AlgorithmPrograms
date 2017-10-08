@@ -2,7 +2,7 @@
  *  @author  Ragini Patil
  *  @version 1.0
  *  @since   8-09-2017
- *
+ *@purpose : accepts amount from user and prints equivalient change 
  ******************************************************************************/
 package com.bridgelabz.programs;
 
@@ -23,6 +23,7 @@ public class VendingMachine {
 				int noteCount[] = new int[notes.length];
 				if (change > 0) {
 					Utility.giveChange(noteCount, change, 0);
+					//loop
 					for (int i = 0; i < notes.length; i++) {
 						if (noteCount[i] != 0)
 							System.out.println(notes[i] + " Rs note= " + noteCount[i]);

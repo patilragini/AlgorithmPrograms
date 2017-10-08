@@ -19,9 +19,9 @@ public class AnagramCheck {
 			char again;
 			do {
 				System.out.println("enter two strings");
-				String str1 = scanner.next();
-				String str2 = scanner.next();
-				if (Utility.anagramChecker(str1, str2)) {
+				String string1 = scanner.next();
+				String string2 = scanner.next();
+				if (Utility.anagramChecker(string1, string2)) {
 					System.out.println("Strings Are Anagrams");
 				} else
 					System.out.println("Strings Are Not Anagrams");

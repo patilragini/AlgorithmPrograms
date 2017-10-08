@@ -1,3 +1,9 @@
+/****************************************************************************** 
+ *  @author  Ragini Patil
+ *  @version 1.0
+ *  @since   8-09-2017
+ *@purpose : print prime number till 1000 then print anagram and tehn palindrome of numbers
+ ******************************************************************************/
 package com.bridgelabz.programs;
 
 import java.util.ArrayList;
@@ -11,6 +17,7 @@ public class PrimeAnagramPalindrome {
 		List<Integer> list = new ArrayList<Integer>();
 		List<Integer> listanagram = new ArrayList<Integer>();
 		List<Integer> listpalindrome = new ArrayList<Integer>();
+		//loop
 		int a = 0;
 		for (int i = a; i < 1000; i++) {
 			if (Utility.checkPrime(i)) {
@@ -19,7 +26,7 @@ public class PrimeAnagramPalindrome {
 		}
 		System.out.println("prime numbers are:" + list);
 		System.out.println("Total number of prime numbers are:" + list.size());
-
+		//loop
 		for (int j = 0; j < list.size() - 1; j++) {
 			for (int k = j + 1; k < list.size() - 1; k++) {
 				if (Utility.anagramChecker2(list.get(j), list.get(k))) {
@@ -30,7 +37,7 @@ public class PrimeAnagramPalindrome {
 
 		System.out.println("\nAnagram numbers are :" + listanagram);
 		System.out.println("Total number of anagram numbers are :" + listanagram.size());
-
+		//loop
 		for (int j = 0; j < listanagram.size() - 1; j++) {
 			if (Utility.palindromeChecker(listanagram.get(j))) {
 				listpalindrome.add(listanagram.get(j));
